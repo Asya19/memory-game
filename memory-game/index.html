@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory-game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="wrapper">
+            <div class="container-logo">
+                <div class="logo">
+                    <h1>Memory game</h1>
+                    <div class="header-menu">
+                        <a type="button" class="header-a btn-main">Меню</a>
+                        <a type="button" class="header-a btn-header-res">Результаты</a>
+                        <a type="button" class="header-a btn-rules">Обучение</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="wrap-rules">
+            <div class="rules">
+                <h2 class="title-rules">Rules and training</h2>
+                <ol class="prep-ul">
+                    <li class="p-rules">To complete the mission, you need to click on any one card, then click on any other,
+                        to try to form a pair. <br> If the cards do not match, they turn over and you can try again; </li>
+                    <li class="p-rules">For opening a pair, you get 3 points;</li>
+                    <li class="p-rules">For each mistake, 1 point will be deducted from you;</li>
+                    <li class="p-rules">As long as you have not formed a pair, points are not deducted;</li>
+                    <li class="p-rules">The number of steps and time does not affect the score;</li>
+                    <button class="prev-rules">&#8592; Back</button>
+                </ol>
+            </div>
+        </div>
+
+        <div class="container-main-menu"> 
+            <div class="container-menu-wrap">
+                <div class="main-menu"> 
+                    <h2 class="main-menu-hello">Hello, <span class="ninja"></span>!</h2>
+                    <label for="nickname" class="input-label">Write your name to follow the best result</label>
+                    <input type="text" placeholder="nickname" class="hello-name-input" id="nickname" autocomplete="off">
+                    
+                    <div class="rang">
+                        <p class="help-message"></p>
+                        <p class="rang-title">Choose a mission level:</p>
+                    
+                        <div class="switch-level">
+                            <button class="btn-level _active" data-level="genin">Genin</button>
+                            <button class="btn-level" data-level="chuunin">Chunin</button>
+                            <button class="btn-level" data-level="zenin">Junin</button>
+                            <button class="btn-level" data-level="kage">Kage</button>
+                        </div>
+
+                        <button class="btn btn-play">New mission</button>
+                        <button class="btn btn-res">Results</button>
+                    </div>
+
+                </div>
+
+                <div class="history">
+                    <div class="container-history">
+                        <div class="history-best-res">
+                            <h2 class="title-h2">Best results</h2>
+    
+                            <div class="named history-result">
+                                <div class="history_name-ninja">Name</div>
+                                <div class="time">Time
+                                    <div class="history_min"></div>
+                                    <div class="history_sec"></div>
+                                </div>
+                                <div class="history_score">Score</div>
+                                <div class="history_step">Step</div>
+                            </div> 
+                            
+                            <div class="best-results"></div>
+                        </div>
+    
+                        <div class="history-last">
+                            <h2 class="title-h2">Mission results</h2>
+                            <div class="named history-result">
+                                <div class="history_name-ninja">Name</div>
+                                <div class="time">Time
+                                    <div class="history_min"></div>
+                                    <div class="history_sec"></div>
+                                </div>
+                                <div class="history_score">Score</div>
+                                <div class="history_step">Step</div>
+                            </div>
+                            <div class="results"></div>
+                        </div>
+                    </div>
+
+                    <div class="wrap-btn-history">
+                        <button class="btn btn-back">&#8592; Back</button>
+                    </div>
+                    
+                </div>
+
+
+            </div>
+        </div>
+
+        <main class="main">
+            <div class="container-memory-game">
+                <div class="container-current-menu">
+                    <div class="current-menu">
+                        <div class="timer">
+
+                            <div class="timer__block">
+                                <div class="cur-time min">00</div>
+                            </div>
+
+                            <span>:</span>
+
+                            <div class="timer__block">
+                                <div class="cur-time sec">00</div>
+                            </div>
+                        </div>
+
+                        <div class="score">
+                            <span>Score:</span>
+                            <span class="current-score">0</span>
+                        </div>
+
+                        <div class="step"> 
+                            <span>Step:</span>
+                            <span class="current-step">0</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="bg-mem-game">
+                    <div class="memory-cards"></div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="date">
+                <p>©</p>
+                <p>2022</p>
+                <a class="light" href="https://github.com/Asya19?tab=repositories">github</a>
+            </div>
+            <a href="https://rs.school/"><img src="assets/img/RS SCHOOL.svg" alt="Logo" ></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
